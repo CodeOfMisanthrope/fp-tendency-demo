@@ -1,0 +1,41 @@
+{
+   "compilerOptions": {
+      "target": "ES2015",
+      "lib": [
+         "dom",
+         "esnext"
+      ],
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": false,
+      "noEmit": true,
+      "declaration": true,
+      "declarationDir": "dist",
+      "rootDir": ".",
+      "baseUrl": "./",
+      "paths": {
+         "~core/*": [
+            "src/lib/*"
+         ],
+         "~lib/*": [
+            "src/lib/*"
+         ],
+         "~assets/*": [
+            "assets/*"
+         ]
+      }
+   },
+   "include": [
+      "src/**/*.ts",
+      "index.d.ts"
+   ],
+   "exclude": [
+      "node_modules"
+   ]
+}

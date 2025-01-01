@@ -1,0 +1,41 @@
+{
+   "compilerOptions": {
+      "target": "ESNext",
+      "lib": [
+         "esnext"
+      ],
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "NodeNext",
+      "resolveJsonModule": true,
+      "isolatedModules": false,
+      "noEmit": true,
+      "declaration": true,
+      "declarationDir": "build",
+      "rootDir": ".",
+      "baseUrl": "./",
+      "paths": {
+         "~core/*": [
+            "src/lib/core/*"
+         ],
+         "~lib/*": [
+            "src/lib/*"
+         ],
+         "~assets/*": [
+            "assets/*"
+         ]
+      }
+   },
+   "include": [
+      "esbuild.config.ts",
+      "rollup.config.ts",
+      "jest.config.ts"
+   ],
+   "exclude": [
+      "node_modules"
+   ]
+}
