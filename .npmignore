@@ -45,7 +45,6 @@ Icon
 /yalc.lock
 
 # Build && test
-/dist
 /.esbuild
 /coverage
 /.nyc_output
