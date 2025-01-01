@@ -844,6 +844,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fp-tendency/demo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@fp-tendency/demo@workspace:."
+  dependencies:
+    "@blue-cheese/linters": "npm:^0.1.1"
+    "@craftamap/esbuild-plugin-html": "npm:^0.8.0"
+    "@esbuild/linux-x64": "npm:^0.24.2"
+    "@rollup/plugin-alias": "npm:^5.1.1"
+    "@rollup/plugin-commonjs": "npm:^28.0.2"
+    "@rollup/plugin-terser": "npm:^0.4.4"
+    "@rollup/plugin-typescript": "npm:^12.1.2"
+    "@types/jest": "npm:^29.5.14"
+    "@types/node": "npm:^22.10.3"
+    "@typescript-eslint/eslint-plugin": "npm:^8.19.0"
+    "@typescript-eslint/parser": "npm:^8.19.0"
+    esbuild: "npm:^0.24.2"
+    eslint: "npm:^9.17.0"
+    eslint-plugin-jsdoc: "npm:^50.6.1"
+    jest: "npm:^29.7.0"
+    lefthook: "npm:^1.10.1"
+    prettier: "npm:^3.4.2"
+    rollup: "npm:^4.29.1"
+    rollup-plugin-delete: "npm:^2.1.0"
+    ts-jest: "npm:^29.2.5"
+    ts-node: "npm:^10.9.2"
+    tslib: "npm:^2.8.1"
+    tsx: "npm:^4.19.2"
+    typescript: "npm:^5.7.2"
+  dependenciesMeta:
+    "@esbuild/linux-x64":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@humanfs/core@npm:^0.19.1":
   version: 0.19.1
   resolution: "@humanfs/core@npm:0.19.1"
@@ -3181,40 +3215,6 @@ __metadata:
   checksum: 10c0/bb102d570be8592c23f4ea72d7df9daa50c7792eb0cf1c5d7e506c1706e7426a4e4ae48a35b109e91c85f1c0ec63774a21ae252b66f4eb981cb8efef7d0463c8
   languageName: node
   linkType: hard
-
-"fp-tendency-demo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "fp-tendency-demo@workspace:."
-  dependencies:
-    "@blue-cheese/linters": "npm:^0.1.1"
-    "@craftamap/esbuild-plugin-html": "npm:^0.8.0"
-    "@esbuild/linux-x64": "npm:^0.24.2"
-    "@rollup/plugin-alias": "npm:^5.1.1"
-    "@rollup/plugin-commonjs": "npm:^28.0.2"
-    "@rollup/plugin-terser": "npm:^0.4.4"
-    "@rollup/plugin-typescript": "npm:^12.1.2"
-    "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.10.3"
-    "@typescript-eslint/eslint-plugin": "npm:^8.19.0"
-    "@typescript-eslint/parser": "npm:^8.19.0"
-    esbuild: "npm:^0.24.2"
-    eslint: "npm:^9.17.0"
-    eslint-plugin-jsdoc: "npm:^50.6.1"
-    jest: "npm:^29.7.0"
-    lefthook: "npm:^1.10.1"
-    prettier: "npm:^3.4.2"
-    rollup: "npm:^4.29.1"
-    rollup-plugin-delete: "npm:^2.1.0"
-    ts-jest: "npm:^29.2.5"
-    ts-node: "npm:^10.9.2"
-    tslib: "npm:^2.8.1"
-    tsx: "npm:^4.19.2"
-    typescript: "npm:^5.7.2"
-  dependenciesMeta:
-    "@esbuild/linux-x64":
-      optional: true
-  languageName: unknown
-  linkType: soft
 
 "fs-minipass@npm:^3.0.0":
   version: 3.0.3
