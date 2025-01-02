@@ -1,4 +1,8 @@
 {
+  "ts-node": {
+    "transpileOnly": true,
+    "require": [ "typescript-transform-paths/register" ]
+  },
    "compilerOptions": {
       "target": "ES2015",
       "lib": [
@@ -37,8 +41,7 @@
    },
    "include": [
       "src/**/*.ts",
-      "index.d.ts",
-     "dist/src/lib/**/.ts"
+      "index.d.ts"
    ],
    "exclude": [
       "node_modules"
