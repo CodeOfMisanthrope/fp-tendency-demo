@@ -49,7 +49,7 @@ Icon
 /coverage
 /.nyc_output
 
-.env
+#.env
 *.d.js
 
 #/tsconfig.json
