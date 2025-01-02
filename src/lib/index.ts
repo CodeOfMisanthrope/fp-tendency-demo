@@ -1,1 +1,1 @@
-export { map, filter, enumerate } from "~core/iter";
+export { map, filter, enumerate, take } from "~core/iter";
