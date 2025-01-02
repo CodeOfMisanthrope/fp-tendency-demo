@@ -85,7 +85,7 @@ jobs:
         run: yarn
 
       - name: ts-patch install
-        run: ts-patch install
+        run: yarn prepare
 
       - name: Run build
         run: yarn build
