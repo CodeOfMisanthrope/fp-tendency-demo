@@ -1,8 +1,4 @@
 {
-  "ts-node": {
-    "transpileOnly": true,
-    "require": [ "typescript-transform-paths/register" ]
-  },
   "compilerOptions": {
       "target": "ESNext",
       "lib": [

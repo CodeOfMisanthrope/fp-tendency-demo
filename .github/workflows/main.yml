@@ -84,6 +84,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: ts-patch install
+        run: ts-patch install
+
       - name: Run build
         run: yarn build
 

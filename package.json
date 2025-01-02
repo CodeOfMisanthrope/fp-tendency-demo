@@ -3,7 +3,7 @@
   "description": "FP-Tendency library demo",
   "homepage": "https://github.com/CodeOfMisanthrope/fp-tendency-demo/#readme",
   "license": "MIT",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "author": {
     "name": "CodeOfMisanthrope",
     "email": "iosdsbb@gmail.com",
@@ -37,7 +37,8 @@
     "test": "jest",
     "fmt:write": "prettier src/lib --write",
     "fmt:check": "prettier src/lib --check",
-    "hooks:install": "lefthook install"
+    "hooks:install": "lefthook install",
+    "prepare": "ts-patch install -s"
   },
   "devDependencies": {
     "@blue-cheese/linters": "^0.1.1",
