@@ -1,5 +1,7 @@
 # FP Tendency demo
 
+[![npm version](https://badge.fury.io/js/@fp-tendency%2Fdemo.svg)](https://badge.fury.io/js/@fp-tendency%2Fdemo)
+
 A functional programming library.
 
 ## Usage
