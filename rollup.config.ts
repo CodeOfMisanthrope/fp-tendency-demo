@@ -38,7 +38,7 @@ const config = {
 		alias({
 			entries: [
 				{ find: "~lib", replacement: "src/lib" },
-				{ find: "~core", replacement: "src/lib/core" },
+				{ find: "~core", replacement: "src/lib" },
 				{ find: "~assets", replacement: "assets" },
 			],
 		}),

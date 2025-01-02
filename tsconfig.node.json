@@ -1,5 +1,5 @@
 {
-   "compilerOptions": {
+  "compilerOptions": {
       "target": "ESNext",
       "lib": [
          "esnext"
@@ -18,17 +18,21 @@
       "declarationDir": "build",
       "rootDir": ".",
       "baseUrl": "./",
-      "paths": {
-         "~core/*": [
-            "src/lib/core/*"
-         ],
-         "~lib/*": [
-            "src/lib/*"
-         ],
-         "~assets/*": [
-            "assets/*"
-         ]
-      }
+     "paths": {
+       "~core/*": [
+         "src/lib/*"
+       ],
+       "~assets/*": [
+         "assets/*"
+       ]
+     },
+     "plugins": [
+       // Transform paths in output .js files
+       { "transform": "typescript-transform-paths" },
+
+       // Transform paths in output .d.ts files (Include this line if you output declarations files)
+       { "transform": "typescript-transform-paths", "afterDeclarations": true }
+     ]
    },
    "include": [
       "esbuild.config.ts",

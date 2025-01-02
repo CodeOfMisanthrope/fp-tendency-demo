@@ -49,8 +49,8 @@ Icon
 /coverage
 /.nyc_output
 
-.env
-*.d.js
+#.env
+#*.d.js
 
 #/tsconfig.json
 #/*.tsconfig.json

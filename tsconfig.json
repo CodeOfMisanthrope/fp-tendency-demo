@@ -26,12 +26,18 @@
          "~assets/*": [
             "assets/*"
          ]
-      }
+      },
+     "plugins": [
+       // Transform paths in output .js files
+       { "transform": "typescript-transform-paths" },
+
+       // Transform paths in output .d.ts files (Include this line if you output declarations files)
+       { "transform": "typescript-transform-paths", "afterDeclarations": true },
+     ]
    },
    "include": [
       "src/**/*.ts",
-      "index.d.ts",
-     "dist/src/lib/**/.ts"
+      "index.d.ts"
    ],
    "exclude": [
       "node_modules"
