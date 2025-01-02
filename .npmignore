@@ -49,8 +49,21 @@ Icon
 /coverage
 /.nyc_output
 
-#.env
 #*.d.js
+.editorconfig
+.env
+.gitattributes
+.gitignore
+.prettierignore
+.prettierrc.json
+jest.config.ts
+.yarnrc.yml
+eslint.config.js
+esbuild.config.ts
+rollup.config.ts
+lefthook.yml
+tsconfig.json
+tsconfig.node.json
 
 #/tsconfig.json
 #/*.tsconfig.json
