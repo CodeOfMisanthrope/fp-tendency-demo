@@ -1,1 +1,3 @@
-export {default as map} from "~core/iter/sync/map";
+export { map } from "~core/iter/sync/map";
+export { filter } from "~core/iter/sync/filter";
+export { enumerate } from "~core/iter/sync/enumerate";

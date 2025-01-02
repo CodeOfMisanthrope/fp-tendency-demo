@@ -3,7 +3,7 @@
   "description": "FP-Tendency library demo",
   "homepage": "https://github.com/CodeOfMisanthrope/fp-tendency-demo/#readme",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "author": {
     "name": "CodeOfMisanthrope",
     "email": "iosdsbb@gmail.com",
@@ -22,7 +22,8 @@
     "Iter"
   ],
   "type": "module",
-  "types": "index.d.ts",
+  "types": "./dist/src/lib/index.d.ts",
+  "typings": "./dist/src/lib/index.d.ts",
   "exports": {
     "import": "./dist/bundle.mjs",
     "require": "./dist/bundle.cjs",

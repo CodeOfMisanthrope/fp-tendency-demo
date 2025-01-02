@@ -23,9 +23,6 @@
          "~core/*": [
             "src/lib/*"
          ],
-         "~lib/*": [
-            "src/lib/*"
-         ],
          "~assets/*": [
             "assets/*"
          ]
@@ -33,7 +30,8 @@
    },
    "include": [
       "src/**/*.ts",
-      "index.d.ts"
+      "index.d.ts",
+     "dist/src/lib/**/.ts"
    ],
    "exclude": [
       "node_modules"
