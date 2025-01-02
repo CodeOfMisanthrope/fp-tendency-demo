@@ -20,3 +20,15 @@ Changelog
 #### :rocket: New Feature
 
 * Added iter map
+
+## v0.0.4 (2025-01-02)
+
+#### :rocket: New Feature
+
+* Added iter filter
+
+## v0.0.5 (2025-01-02)
+
+#### :rocket: New Feature
+
+* Added iter enumerate

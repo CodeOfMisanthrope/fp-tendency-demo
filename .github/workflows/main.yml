@@ -2,9 +2,9 @@ name: publish
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ iter ]
   pull_request:
-    branches: [dev]
+    branches: [ iter ]
 
 jobs:
   lint:

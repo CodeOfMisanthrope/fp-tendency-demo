@@ -1,4 +1,4 @@
-import map from "~core/iter/sync/map";
+import { map } from "~core/iter/sync/map";
 
 describe("core/iter/map", () => {
     test("map [1, 2, 3, 4]", () => {

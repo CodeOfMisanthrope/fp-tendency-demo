@@ -21,7 +21,7 @@
  *     console.log(value); // 2, 4, 6
  * }
  */
-export default function map<T, U>(
+export function map<T, U>(
     iterable: Iterable<T>,
     fn: (v: T, index?: number, iterable?: Iterable<T>) => U,
     thisArg?: unknown
