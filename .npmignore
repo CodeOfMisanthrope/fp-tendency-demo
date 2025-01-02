@@ -50,7 +50,7 @@ Icon
 /.nyc_output
 
 #.env
-*.d.js
+#*.d.js
 
 #/tsconfig.json
 #/*.tsconfig.json
