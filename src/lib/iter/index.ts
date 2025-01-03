@@ -3,3 +3,4 @@ export { filter } from "~core/iter/sync/filter";
 export { enumerate } from "~core/iter/sync/enumerate";
 export { take } from "~core/iter/sync/take";
 export { repeat } from "~core/iter/sync/repeat";
+export { count } from "~core/iter/sync/count";
