@@ -1,6 +1,6 @@
 import { take } from "~core/iter/sync/take";
 
-describe("core/iter/take", () => {
+describe("take", () => {
   test("take [1, 2, 3, 4] 3", () => {
     const iter = take([1, 2, 3, 4], 3);
     expect([...iter]).toEqual([1, 2, 3]);

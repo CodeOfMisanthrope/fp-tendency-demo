@@ -22,7 +22,7 @@ async function main() {
 		logLevel: "info",
 		alias: {
 			"~lib": path.resolve(dirname, "src", "lib"),
-			"~core": path.resolve(dirname, "src", "lib", "core"),
+			"~core": path.resolve(dirname, "src", "lib",),
 			"~assets": path.resolve(dirname, "assets"),
 		},
 		plugins: [
