@@ -9,5 +9,6 @@ export {
    last,
    toArray,
    toSet,
+   slice,
 
 } from "~core/iter";
