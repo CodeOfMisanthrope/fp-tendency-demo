@@ -1,9 +1,14 @@
 import "~assets/style/main.css";
 import esbuildApiInit from "./esbuild-api";
-import { slice } from "~core/iter";
+import { curry } from "~core/utils";
 
 esbuildApiInit();
 
 console.log("Dec server is running");
 
-console.log([...slice([1, 2, 3, 4], 0, 2)]);
+const add = (x: number, y: number) => x + y;
+const add2 = (x: number, y: number, z:number) => x + y + z;
+
+console.log(typeof curry(add)(1)(2));
+console.log(typeof curry(add)(1)(3));
+console.log(typeof curry(add2)(1)(3));
