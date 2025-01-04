@@ -1,6 +1,6 @@
 import { toArray } from "~core/iter/sync/to-array";
 
-describe("iToArray", () => {
+describe("toArray", () => {
   test("converts generator to array", () => {
     const generator = function* () {
       yield 1;

@@ -1,6 +1,6 @@
 import { repeat } from "~core/iter/sync/repeat";
 
-describe("core/iter/repeat", () => {
+describe("repeat", () => {
   test("repeat [1, 2, 3, 4] 2", () => {
     const iter = repeat([1, 2, 3, 4], 2);
     expect([...iter]).toEqual([1, 2, 3, 4, 1, 2, 3, 4]);

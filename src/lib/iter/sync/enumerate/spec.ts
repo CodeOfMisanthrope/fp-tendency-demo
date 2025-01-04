@@ -1,6 +1,6 @@
 import { enumerate } from "~core/iter/sync/enumerate";
 
-describe("core/iter/enumerate", () => {
+describe("enumerate", () => {
   test("enumerate [1, 2, 3, 4]", () => {
     const iter = enumerate([1, 2, 3, 4]);
     expect([...iter]).toEqual([
