@@ -12,3 +12,5 @@ export {
    slice,
 
 } from "~core/iter";
+
+import {curry} from "~core/utils";
