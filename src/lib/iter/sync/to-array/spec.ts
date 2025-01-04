@@ -10,7 +10,7 @@ describe("toArray", () => {
       yield 5;
     };
     const result = toArray(generator());
-    expect(result).toEqual([1, 2, 3]);
+    expect(result).toEqual([1, 2, 3, 4, 5]);
   });
 
   test("works with empty generator", () => {
