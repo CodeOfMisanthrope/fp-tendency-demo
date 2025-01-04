@@ -7,3 +7,4 @@ export { count } from "~core/iter/sync/count";
 export { first } from "~core/iter/sync/first";
 export { last } from "~core/iter/sync/last";
 export { toArray } from "~core/iter/sync/to-array";
+export { toSet } from "~core/iter/sync/to-set";
