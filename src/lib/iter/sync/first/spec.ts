@@ -1,6 +1,6 @@
 import { first } from "~core/iter/sync/first";
 
-describe("iFirst", () => {
+describe("first", () => {
   test("first element of [1, 2, 3]", () => {
     expect(first([1, 2, 3])).toBe(1);
   });

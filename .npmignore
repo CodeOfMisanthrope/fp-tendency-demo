@@ -49,6 +49,8 @@ Icon
 /coverage
 /.nyc_output
 
+/src
+
 #*.d.js
 .editorconfig
 .env
