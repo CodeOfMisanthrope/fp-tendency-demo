@@ -3,30 +3,29 @@ import {
    ResolverErr,
    ResolverOk,
    State,
-
 } from "~core/containers/result/interfaces";
 
 export default class Result<T> {
-  protected state: State;
-  protected err!: Error;
-  protected val!: CanVoid<T>;
+   protected state: State;
+   protected err!: Error;
+   protected val!: CanVoid<T>;
 
-  static Err<T>(err: Error | string) {
-    return new Result<T>(() => {
-      throw err;
-    });
-  }
+   static Err<T>(err: Error | string) {
+      return new Result<T>(() => {
+         throw err;
+      });
+   }
 
-  static Ok<T>(val: T) {
-    return new Result<T>(() => val);
-  }
+   static Ok<T>(val: T) {
+      return new Result<T>(() => val);
+   }
 
-  get status() {
-    return this.state;
-  }
+   get status() {
+      return this.state;
+   }
 
-  constructor(executor: Resolver<T>) {
-    this.state = State.IDLE;
+   constructor(executor: Resolver<T>) {
+      this.state = State.IDLE;
 
       try {
          this.val = executor();
@@ -38,9 +37,9 @@ export default class Result<T> {
    }
 
    public then<R>(resolver: ResolverOk<T, R>) {
-                if (this.state !== State.OK) {
-          return this;
-      }
+      if (this.state !== State.OK) {
+         return this;
+                        }
 
       return new Result<R>(() => {
          return resolver(this.val);
