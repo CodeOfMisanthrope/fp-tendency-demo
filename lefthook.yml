@@ -6,10 +6,7 @@ pre-commit:
       run: yarn eslint {staged_files}
     fmt:
       glob: "*.{ts,js,md}"
-      run: | 
-        yarn prettier {staged_files} --write
-        git add {staged_files}
-        git commit -m "style: fmt"
+      run: yarn prettier {staged_files} --write
 
 pre-push:
   commands:
