@@ -38,7 +38,7 @@ export default class Result<T> {
    }
 
    public then<R>(resolver: ResolverOk<T, R>) {
-      if (this.state !== State.OK) {
+                if (this.state !== State.OK) {
          return this;
       }
 
