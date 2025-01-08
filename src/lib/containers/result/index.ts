@@ -1,4 +1,10 @@
-import { Resolver, ResolverOk, State } from "~core/containers/result/interfaces";
+import {
+   Resolver,
+   ResolverErr,
+   ResolverOk,
+   State,
+
+} from "~core/containers/result/interfaces";
 
 export default class Result<T> {
   protected state: State;
@@ -22,27 +28,32 @@ export default class Result<T> {
   constructor(executor: Resolver<T>) {
     this.state = State.IDLE;
 
-    try {
-      this.val = executor();
-      this.state = State.OK;
+      try {
+         this.val = executor();
+         this.state = State.OK;
+      } catch (err) {
+         this.err = err as Error;
+         this.state = State.ERR;
+      }
+   }
 
-    } catch (err) {
-      this.err = err as Error;
-      this.state = State.ERR;
-    }
-  }
+   public then<R>(resolver: ResolverOk<T, R>) {
+      if (this.state !== State.OK) {
+         return this;
+      }
 
-  public then<R>(resolver: ResolverOk<T, R>) {
-    if (this.state !== State.ERR) {
-      return this;
-    }
+      return new Result<R>(() => {
+         return resolver(this.val);
+      });
+   }
 
-    return new Result<R>(() => {
-      return resolver(this.val);
-    });
-  }
+   public catch<R>(resolver: ResolverErr<R>) {
+      if (this.state !== State.ERR) {
+         return this;
+      }
 
-  public catch() {
-
-  }
-};
+      return new Result<R>(() => {
+         return resolver(this.err);
+      });
+   }
+}
