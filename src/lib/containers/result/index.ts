@@ -38,8 +38,8 @@ export default class Result<T> {
 
    public then<R>(resolver: ResolverOk<T, R>) {
       if (this.state !== State.OK) {
-         return this;
-                        }
+                      return this;
+      }
 
       return new Result<R>(() => {
          return resolver(this.val);
