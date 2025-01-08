@@ -9,6 +9,7 @@ pre-commit:
       run: | 
         yarn prettier {staged_files} --write
         git add {staged_files}
+        git commit -m "style: fmt"
 
 pre-push:
   commands:
