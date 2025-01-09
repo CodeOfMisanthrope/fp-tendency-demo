@@ -9,6 +9,12 @@ Changelog
 > - :house:      [Internal]
 > - :nail_care:  [Polish]
 
+## v0.0.21 (2025-01-09)
+
+#### :rocket: New Feature
+
+* Added container Result (Rust reference)
+
 ## v0.0.18 (2025-01-03)
 
 #### :rocket: New Feature
