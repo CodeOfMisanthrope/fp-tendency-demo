@@ -9,7 +9,7 @@ A functional programming library designed to enhance your JavaScript development
 With yarn:
 
 ```shell
-yarn add @fp-tendency/demo 
+yarn add @fp-tendency/demo
 ```
 
 With npm:
@@ -36,3 +36,8 @@ Feel free to contribute or raise issues in the repository!
 - Utility Functions: Includes utility functions like curry and memoize etc to enhance your functional
   programming toolkit.
 - TypeScript Support: Built with TypeScript to provide type safety and an improved developer experience.
+
+## Contribution
+
+We welcome contributions! If you have suggestions, improvements, or issues, please feel free to open a pull request or
+issue in the repository.
