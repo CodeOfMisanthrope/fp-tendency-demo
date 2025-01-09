@@ -15,6 +15,12 @@
 
 - Added container Result (Rust reference)
 
+## v0.0.20 (2025-01-06)
+
+#### :rocket: New Feature
+
+- Added curry
+
 ## v0.0.18 (2025-01-03)
 
 #### :rocket: New Feature
