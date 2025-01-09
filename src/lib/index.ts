@@ -13,4 +13,6 @@ export {
 
 } from "~core/iter";
 
-import {curry} from "~core/utils";
+export {curry} from "~core/utils";
+
+export {Result} from "~core/containers";
