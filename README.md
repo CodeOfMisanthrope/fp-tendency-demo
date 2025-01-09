@@ -6,16 +6,22 @@ A functional programming library designed to enhance your JavaScript development
 
 ## Installation
 
-With yarn:
+With Yarn:
 
 ```shell
 yarn add @fp-tendency/demo
 ```
 
-With npm:
+With NPM:
 
 ```shell
 npm i @fp-tendency/demo
+```
+
+With Bun:
+
+```shell
+bun add @fp-tendency/demo
 ```
 
 Modular System Compatibility: The library is available in both ESM and CommonJS formats, making it easy to use in both
