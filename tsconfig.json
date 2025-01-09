@@ -11,7 +11,7 @@
       "strict": true,
       "forceConsistentCasingInFileNames": true,
       "module": "esnext",
-      "moduleResolution": "NodeNext",
+      "moduleResolution": "Bundler",
       "resolveJsonModule": true,
       "isolatedModules": false,
       "noEmit": true,
@@ -32,7 +32,7 @@
        { "transform": "typescript-transform-paths" },
 
        // Transform paths in output .d.ts files (Include this line if you output declarations files)
-       { "transform": "typescript-transform-paths", "afterDeclarations": true },
+       { "transform": "typescript-transform-paths", "afterDeclarations": true }
      ]
    },
    "include": [
