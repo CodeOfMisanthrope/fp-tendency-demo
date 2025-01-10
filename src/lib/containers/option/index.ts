@@ -8,8 +8,6 @@ import {
 export default class Option<T> {
    protected state: State;
 
-   // protected none = null;
-
    protected val!: T;
 
    static exec<T>(executor: () => Generator<Option<T>>) {
@@ -25,7 +23,7 @@ export default class Option<T> {
                next = generator.next(value);
             })
             .catch(() => {
-               next = generator.throw(null);
+               next = generator.next(null);
             });
       }
    }
