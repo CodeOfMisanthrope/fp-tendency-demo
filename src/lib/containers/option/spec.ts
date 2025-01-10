@@ -41,46 +41,46 @@ describe("Option", () => {
       expect(thenInvoked).toBe(false);
    });
 
-  test("should match Some case correctly", () => {
-    const option = new Option(() => 42);
+   test("should match Some case correctly", () => {
+      const option = new Option(() => 42);
 
-    const result = option.match(
-      (val) => val * 2,
-      () => 0
-    );
+      const result = option.match(
+         (val) => val * 2,
+         () => 0,
+      );
 
-    expect(result).toBe(84);
-  });
+      expect(result).toBe(84);
+   });
 
-  test("should match None case correctly", () => {
-    const option = new Option<number>(() => null);
+   test("should match None case correctly", () => {
+      const option = new Option<number>(() => null);
 
-    const result = option.match(
-      (val) => val * 2,
-      () => -1
-    );
+      const result = option.match(
+         (val) => val * 2,
+         () => -1,
+      );
 
-    expect(result).toBe(-1);
-  });
+      expect(result).toBe(-1);
+   });
 
-  test("should unwrap the value correctly when present", () => {
-    const option = new Option(() => 42);
-    const value = option.unwrap();
-    expect(value).toBe(42);
-  });
+   test("should unwrap the value correctly when present", () => {
+      const option = new Option(() => 42);
+      const value = option.unwrap();
+      expect(value).toBe(42);
+   });
 
-  test("should return null when unwrapping an absent value", () => {
-    const option = new Option(() => null);
-    const value = option.unwrap();
-    expect(value).toBeNull();
-  });
+   test("should return null when unwrapping an absent value", () => {
+      const option = new Option(() => null);
+      const value = option.unwrap();
+      expect(value).toBeNull();
+   });
 
-  test("should execute a generator function using exec", () => {
-    const mockLog = jest.spyOn(console, 'log').mockImplementation(() => {});
+   test("should execute a generator function using exec", () => {
+      const mockLog = jest.spyOn(console, "log").mockImplementation(() => {});
 
-    Option.exec(function* main() {
-      const res1 = new Option(() => 42);
-      console.log(yield res1); // 42
+      Option.exec(function* main() {
+         const res1 = new Option(() => 42);
+         console.log(yield res1); // 42
 
          const res2 = yield new Option(() => {
             return null;
