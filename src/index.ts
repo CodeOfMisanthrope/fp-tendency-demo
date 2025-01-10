@@ -14,17 +14,14 @@ console.log("Dec server is running");
 //   .catch((err) => {
 //     console.log(err);
 //   })
-  // .then((val) => {
-  //   console.log(val);
-  // })
-
+// .then((val) => {
+//   console.log(val);
+// })
 
 const op1 = new Option(() => 42);
-op1
-  .then((v) => {
-    console.log(v);
-    return v;
-  })
-  .catch(() => {
-    console.log(null);
-  })
+op1.then((v) => {
+   console.log(v);
+   return v;
+}).catch(() => {
+   console.log(null);
+});
