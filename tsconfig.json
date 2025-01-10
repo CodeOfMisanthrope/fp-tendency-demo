@@ -1,45 +1,48 @@
 {
-   "compilerOptions": {
-      "target": "ES2015",
-      "lib": [
-         "dom",
-         "esnext"
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "newLine": "LF",
+    "declaration": true,
+    "declarationDir": "dist",
+    "rootDir": ".",
+    "baseUrl": "./",
+    "paths": {
+      "~core/*": [
+        "src/lib/*"
       ],
-      "skipLibCheck": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "strict": true,
-      "forceConsistentCasingInFileNames": true,
-      "module": "esnext",
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "isolatedModules": false,
-      "noEmit": true,
-      "declaration": true,
-      "declarationDir": "dist",
-      "rootDir": ".",
-      "baseUrl": "./",
-      "paths": {
-         "~core/*": [
-            "src/lib/*"
-         ],
-         "~assets/*": [
-            "assets/*"
-         ]
+      "~assets/*": [
+        "assets/*"
+      ]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
       },
-     "plugins": [
-       // Transform paths in output .js files
-       { "transform": "typescript-transform-paths" },
-
-       // Transform paths in output .d.ts files (Include this line if you output declarations files)
-       { "transform": "typescript-transform-paths", "afterDeclarations": true },
-     ]
-   },
-   "include": [
-      "src/**/*.ts",
-      "index.d.ts"
-   ],
-   "exclude": [
-      "node_modules"
-   ]
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "index.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

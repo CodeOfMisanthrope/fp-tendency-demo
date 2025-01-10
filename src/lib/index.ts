@@ -14,4 +14,4 @@ export {
 
 export { curry } from "~core/utils";
 
-export { Result } from "~core/containers";
+export { Result, Option } from "~core/containers";
