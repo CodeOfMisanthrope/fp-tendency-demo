@@ -123,23 +123,23 @@ export default class Option<T> {
       }
    }
 
-  /**
-   * Creates a new Option based on the outcome of the provided resolver functions.
-   * If the Option is in the `Some` state, the `some` resolver is called; if it
-   * is in the `None` state, the `none` resolver (if provided) is called.
-   *
-   * @template R - The type of the value returned by the resolver for Some.
-   * @template E - The type of the value returned by the resolver for None.
-   *
-   * @param {ResolverSome<T, R>} resolverSome - Handler for Some case.
-   * @param {ResolverNone<E>} [resolverNone] - Optional handler for None case.
-   *
-   * @returns {Option<R | E>} A new Option instance.
-   *
-   * @example
-   * const option = new Option(() => 42);
-   * const result = option.then(val => val * 2); // Returns an Option containing 84
-   */
+   /**
+    * Creates a new Option based on the outcome of the provided resolver functions.
+    * If the Option is in the `Some` state, the `some` resolver is called; if it
+    * is in the `None` state, the `none` resolver (if provided) is called.
+    *
+    * @template R - The type of the value returned by the resolver for Some.
+    * @template E - The type of the value returned by the resolver for None.
+    *
+    * @param {ResolverSome<T, R>} resolverSome - Handler for Some case.
+    * @param {ResolverNone<E>} [resolverNone] - Optional handler for None case.
+    *
+    * @returns {Option<R | E>} A new Option instance.
+    *
+    * @example
+    * const option = new Option(() => 42);
+    * const result = option.then(val => val * 2); // Returns an Option containing 84
+    */
    public then<R, E>(
       resolverSome: ResolverSome<T, R>,
       resolverNone?: ResolverNone<E>,
