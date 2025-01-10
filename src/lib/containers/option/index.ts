@@ -12,23 +12,23 @@ export default class Option<T> {
 
    protected val!: T;
 
-  static exec<T>(executor: () => Generator<Option<T>>) {
-    const generator = executor();
+   static exec<T>(executor: () => Generator<Option<T>>) {
+      const generator = executor();
 
-    let next = generator.next();
+      let next = generator.next();
 
-    while (!next.done) {
-      const result = next.value;
+      while (!next.done) {
+         const result = next.value;
 
-      result
-        .then((value) => {
-          next = generator.next(value);
-        })
-        .catch(() => {
-          next = generator.throw(null);
-        });
-    }
-  }
+         result
+            .then((value) => {
+               next = generator.next(value);
+            })
+            .catch(() => {
+               next = generator.throw(null);
+            });
+      }
+   }
 
    constructor(executor: Resolver<T>) {
       this.state = State.IDLE;
@@ -37,7 +37,6 @@ export default class Option<T> {
 
       if (res == null) {
          this.state = State.NONE;
-
       } else {
          this.state = State.SOME;
          this.val = res;
@@ -83,13 +82,13 @@ export default class Option<T> {
       }
    }
 
-  public unwrap() {
-    if (this.state === State.SOME) {
-      return this.val;
-    }
+   public unwrap() {
+      if (this.state === State.SOME) {
+         return this.val;
+      }
 
-    if (this.state === State.NONE) {
-      return null;
-    }
-  }
+      if (this.state === State.NONE) {
+         return null;
+      }
+   }
 }
