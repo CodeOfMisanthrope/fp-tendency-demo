@@ -9,6 +9,12 @@
 > - :house: [Internal]
 > - :nail_care: [Polish]
 
+## v0.0.24 (2025-01-10)
+
+#### :rocket: New Feature
+
+- Added container Option (Rust reference)
+
 ## v0.0.21 (2025-01-09)
 
 #### :rocket: New Feature
